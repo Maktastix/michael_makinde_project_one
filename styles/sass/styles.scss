@@ -1,0 +1,7 @@
+@use 'partials/setup';
+@use 'partials/variables' as *;
+@use 'partials/base';
+
+// Either include nav as separate, or include nav into header
+@use 'partials/nav';
+@use 'partials/header';
