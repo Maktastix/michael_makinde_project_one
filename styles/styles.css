@@ -225,3 +225,24 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+nav {
+  font-family: "Montserrat", sans-serif;
+}

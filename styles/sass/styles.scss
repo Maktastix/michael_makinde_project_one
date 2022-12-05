@@ -1,5 +1,9 @@
+// SCSS Stylesheet with imported partials
+
 @use 'partials/setup';
 @use 'partials/variables' as *;
+@use 'partials/typography';
+@use 'partials/mixins';
 @use 'partials/base';
 
 // Either include nav as separate, or include nav into header

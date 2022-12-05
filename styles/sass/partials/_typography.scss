@@ -1,0 +1,38 @@
+// Typography Partial
+
+@use 'variables' as *;
+@use 'mixins';
+
+html{
+    font-size: 125%;
+}
+
+body{
+    font-family: $body_font;
+    font-weight: $font_weight_regular;
+    color: $Black;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+nav{
+    font-family: $header_font;
+}
+
+h1{
+    
+}
+
+h2{
+    
+}
+
+h3{
+    
+}
