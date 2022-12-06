@@ -1,19 +1,14 @@
 // Typography Partial
 
 @use 'variables' as *;
-@use 'mixins';
+@use 'mixins' as *;
 
 html{
     font-size: 125%;
 }
 
 body{
-    font-family: $body_font;
-    font-weight: $font_weight_regular;
-    color: $Black;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-    
+    @include font($body_font, 14, $font_weight_regular, $black, 0.3px, 24px, none);
 }
 
 h1,
@@ -23,16 +18,45 @@ h4,
 button,
 nav{
     font-family: $header_font;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4{
+    letter-spacing: 0.9px;
+    margin: 0;
+    font-weight: $font_weight_bold;
 }
 
 h1{
-    
+    font-size: 37px;
 }
 
 h2{
-    
+    font-size: 60px;
 }
 
 h3{
-    
+    font-size: 30px;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: $font_weight_regular;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    font-size: 18px;
+}
+
+footer{
+    color: $white;
+}
+
+ul{
+    font-size: 14px;
 }

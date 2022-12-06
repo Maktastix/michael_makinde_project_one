@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+
+.comments{
+    margin-bottom: 80px;
+
+    .comment_Jenifer,
+    .comment_Daniel{
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            height: 100%;
+        }
+
+        .comment_container{
+            width: 95%;
+            background-color: rgb(240, 241, 241);
+            clip-path: polygon(100% 0, 100% 100%, 4% 100%, 4% 27%, 2% 21%, 4% 15%, 4% 0);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+
+            p{
+                margin-left: 70px;
+                font-family: $header_font;
+            }
+
+            p:first-child{
+                text-transform: uppercase;    
+
+                span{
+                    text-transform: capitalize;
+                    font-style: $font_italic;
+                }
+            }
+
+            p:nth-child(2){
+                font-size: 12px;
+            }
+
+            p:last-child{
+                color: rgb(148, 153, 160);
+                font-size: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@use 'variables' as *;
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(#{$asset_path}/blog-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav_bar {
+    padding-top: 50px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav_left,
+        .logo,
+        .nav_right {
+            width: 30%;
+        }
+
+        .nav_left {
+            a {
+                margin-right: 20px;
+            }
+        }
+
+        .logo {
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.nav_right {
+    text-align: end;
+
+    a,
+    button {
+        margin-left: 20px;
+    }
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+
+        i{
+            font-size: 20px;
+        }
+    }
+
+    .bag_icon i {
+        position: relative;
+
+        div {
+            position: absolute;
+            background-color: $light_sage;
+            height: 15px;
+            width: 15px;
+            top: 12px;
+            right: -8px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+
+            p {
+                font-size: 10px;
+                align-self: center;
+            }
+        }
+    }
+}
+
+.nav_left a:hover,
+.nav_right a:hover,
+.nav_left a:focus,
+.nav_right a:focus {
+    text-decoration: line-through;
+}

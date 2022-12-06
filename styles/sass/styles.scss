@@ -2,10 +2,11 @@
 
 @use 'partials/setup';
 @use 'partials/variables' as *;
-@use 'partials/typography';
 @use 'partials/mixins';
+@use 'partials/typography';
 @use 'partials/base';
-
-// Either include nav as separate, or include nav into header
-@use 'partials/nav';
 @use 'partials/header';
+@use 'partials/sections_blog';
+@use 'partials/comments';
+@use 'partials/submit_form';
+@use 'partials/footer';

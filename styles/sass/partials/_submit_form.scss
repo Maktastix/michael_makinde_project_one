@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+.submit_comment .form{
+    
+    .form_name{
+        display: flex;
+        justify-content: space-between;
+
+        div{
+            width: 32%;
+
+            input[type=text],
+            input[type=email]{
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid rgb(162, 167, 173);
+                padding: 10px 0;
+                margin-bottom: 50px;
+                font-family: $body_font;
+            }
+        }
+    }
+
+    .form_comment{
+        textarea {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid rgb(162, 167, 173);
+                font-family: $body_font;
+                padding: 10px 0;
+                margin-bottom: 60px;
+            }
+    }
+
+    button{
+        margin-bottom: 140px;
+        padding: 10px 0;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgb(162, 167, 173);
+    }
+}

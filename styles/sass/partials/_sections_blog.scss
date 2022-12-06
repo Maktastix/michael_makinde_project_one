@@ -1,0 +1,117 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.blog{
+    padding-top: 80px;
+
+    .blog_title{
+        padding-bottom: 60px;
+
+        h2{
+            padding-bottom: 20px;
+        }
+
+        span{
+            color: rgb(162, 167, 173);
+        }
+    }
+
+    .blog_writer{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        border-bottom: solid 1px rgb(162, 167, 173);
+
+        .writer_container,
+        .info_container{
+            display: flex;
+            width: 50%;
+
+            .blog_info p:first-child{
+                @include font($header_font, 18, $font_weight_regular, $black, 0.3px, 24px, uppercase);
+                margin-bottom: 5px;
+            }
+
+            .blog_info p:last-child{
+                @include font($body_font, 14, $font_weight_regular, rgb(162, 167, 173), 0.3px, 24px, capitalize);
+                margin-top: 5px;
+            }
+        }
+
+        .writer_container{
+
+            img{
+                border-radius: 50%;
+            }
+
+            div{
+                margin-left: 40px;
+            }
+        }
+
+        .info_container{
+            justify-content: space-between;
+        }
+    }
+
+    .blog_text{
+        padding-top: 40px;
+
+        p:first-child{
+            font-family: $header_font;
+            font-weight: $font_weight_bold;
+            margin: 18px 0;
+        }
+
+        p:nth-child(2),
+        p:nth-child(3),
+        p:last-child{
+            color: rgb(162, 167, 173);
+            margin: 18px 0;
+
+        }
+    }
+
+    .blog_icons{
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+
+        p,
+        a{
+            margin-right: 20px;
+        }
+
+        p{
+            font-family: $header_font;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+}
+
+.related_posts {
+    margin-bottom: 80px;
+
+    .gallery_container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        // Fix issue with image sizing and div/a
+
+        div{
+            width: 30%;
+
+            a{
+                flex-basis: 30%;
+            }
+
+            p{
+                text-transform: uppercase;
+                font-family: $header_font;
+            }
+        }
+    }
+}

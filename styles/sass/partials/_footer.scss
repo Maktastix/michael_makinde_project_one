@@ -1,0 +1,84 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+footer{
+    background-color: $black;
+
+    .wrapper{
+        padding: 140px 0;
+        display: flex;
+        justify-content: space-between;
+
+        h4{
+            padding-bottom: 20px;
+        }
+
+        a{
+            color: white;
+            font-size: 14px;
+        }
+
+        .footer_left{
+        
+            ul{
+                list-style: none;
+                padding-left: 0;
+            }
+
+            a{
+                font-size: 14px;
+                padding-right: 15px;
+            }
+
+        }
+
+        .footer_middle{
+            h4{
+                text-align: center;    
+            }
+
+            ul{
+                padding-left: 15px;
+
+                li{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .footer_right{
+            text-align: end;
+
+            p{
+                padding-bottom: 20px;
+            }
+
+            input[type=email]{
+                width: 200px;
+                height: 40px;
+                border: 1px solid $light_sage;
+                padding-left: 10px;
+                font-family: $body_font;
+            }
+
+            button{
+                border: none;
+                border-radius: 0;
+                background-color: $light_sage;
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+
+    .copyright{
+        margin: 0;
+        padding: 70px 0;
+        text-align: center;
+        border-top: solid 1px rgb(77, 77, 77);
+
+        a{
+            @include font($header_font, 14, $font_weight_regular, $white, 6px, normal, uppercase);
+        }
+    }
+}
