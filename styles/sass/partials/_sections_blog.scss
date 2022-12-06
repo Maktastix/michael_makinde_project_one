@@ -102,10 +102,10 @@
         // Fix issue with image sizing and div/a
 
         div{
-            width: 30%;
+            width: 32%;
 
-            a{
-                flex-basis: 30%;
+            img{
+                max-width: 100%;
             }
 
             p{
