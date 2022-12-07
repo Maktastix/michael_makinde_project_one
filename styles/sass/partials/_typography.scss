@@ -15,6 +15,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 button,
 nav{
     font-family: $header_font;
@@ -24,7 +25,8 @@ nav{
 h1,
 h2,
 h3,
-h4{
+h4,
+h5{
     letter-spacing: 0.9px;
     margin: 0;
     font-weight: $font_weight_bold;
@@ -44,7 +46,11 @@ h3{
 
 h4{
     font-size: 18px;
-    font-weight: $font_weight_regular;
+}
+
+h5{
+    font-size: 14px;
+    letter-spacing: 10px;
 }
 
 a {

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,	wght@0,400;0,700;1,400&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/1f2a91a9e1.js" crossorigin="anonymous"></script>
+    <title>Creative Contact</title>
+</head>
+
+<body>
+
+        <nav class="nav_bar">
+            <div class="wrapper">
+                <div class="nav_left">
+                    <a href="./index.html">home</a>
+                    <a href="#">blog</a>
+                    <a href="#">portfolio</a>
+                </div>
+                <a href="#" class="logo" id="logo">
+                    <h1>creative</h1>
+                </a>
+                <div class="nav_right">
+                    <a href="#">shop</a>
+                    <a href="#">contact</a>
+                    <button class="search_icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="bag_icon">
+                        <i class="fa-solid fa-bag-shopping">
+                            <div>
+                                <p class="bag_number">0</p>
+                            </div>
+                        </i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <header class="contact_header">
+            <h2 class="wrapper"><span>c</span>ontact <span>us</span></h2>
+        </header>
+
+        <main>
+
+            <section class="contact_details wrapper">
+                <div class="info">
+                    <h4>contact details</h4>
+                    <p>If you need any help, please contact us or send us an email or go to our forum. We are sure that you can receive our reply as soon as possible.</p>
+                </div>
+                <div class="contact_divs">
+                    <div class="phone">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h5>phone</h5>
+                        <p>Phone 01: 123, 456, 7890</p>
+                        <p>Phone 02: 345, 678, 9101</p>
+                    </div>
+                    <div class="address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h5>address</h5>
+                        <p>6591 Orchard Street, Toronto, Ontario</p>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>email</h5>
+                        <p>contact@creative.com</p>
+                        <p>info@creative.com</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4>get in touch with us</h4>
+                    <p>If you have any questions, Please don't hesitate to send us a message</p>
+                </div>
+            </section>
+
+            <section class="submit_comment wrapper">
+                <div class="form">
+                    <form class="form_name" action="/submit-message" id="form_1">
+                        <div class="name_container">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                        </div>
+                        <div class="email_container">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                        </div>
+                        <div class="subject_container">
+                            <label for="subject"></label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
+                        </div>
+                    </form>
+                    <form class="form_comment" action="/submit-message">
+                        <label for="comment"></label>
+                        <textarea id="comment" name="comment" cols="40" rows="8" placeholder="Here goes your comment..."
+                            required></textarea>
+                    </form>
+                    <button class="message" type="submit" form="form_1" value="submit">send message</button>
+                </div>
+            </section>
+
+            <section class="phone_call">
+                <img src="./assets/contact-2.jpeg" alt="A woman talking on her cellphone with excitement">
+            </section>
+
+            <footer class="footer">
+                <div class="wrapper">
+                    <div class="footer_left">
+                        <h4>contact us</h4>
+                        <ul>
+                            <li>6591 Orchard Street, Toronto, Ontario</li>
+                            <li>Email: contact@creative.com</li>
+                            <li>Phone 01: 123 456 7890</li>
+                            <li>Phone 02: 345 678 9101</li>
+                            <li>Fax: 643 6543 898</li>
+                        </ul>
+                        <div class="blog_icons">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_middle">
+                        <h4>recent posts</h4>
+                        <ul>
+                            <li><a href="#">Conversion hackathon partner</a></li>
+                            <li><a href="#">Network channels entrepeneur</a></li>
+                            <li><a href="#">Return on investment creative</a></li>
+                            <li><a href="#">Assets interaction design venture</a></li>
+                            <li><a href="#">Infographic learning curve</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_right">
+                        <h4>subscribe now</h4>
+                        <p>Signup for emails and notifications below.</p>
+                        <form action="/submit-email">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required><span><button
+                                    type="submit" id="email"><i class="fa-solid fa-arrow-right-long"></i></button></span>
+                        </form>
+                    </div>
+                </div>
+                <p class="copyright"><a href="#logo">creative agency</a></p>
+            </footer>
+
+        </main>
+
+</body>
+</html>

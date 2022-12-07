@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-header{
+.blog_header{
     height: 100vh;
     width: 100%;
     background-image: url(#{$asset_path}/blog-1.jpeg);
@@ -9,7 +9,7 @@ header{
 }
 
 .nav_bar {
-    padding-top: 50px;
+    padding: 40px 0;
 
     .wrapper {
         display: flex;
@@ -81,4 +81,26 @@ header{
 .nav_left a:focus,
 .nav_right a:focus {
     text-decoration: line-through;
+}
+
+.contact_header {
+    background-image: url(#{$asset_path}/contact-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+
+    h2 {
+        line-height: 80px;
+        padding-top: 140px;
+
+        span:first-child {
+            padding-top: 55px;
+            border-top: 4px solid $black;
+        }
+
+        span:last-child {
+            display: block;
+        }
+    }
 }
