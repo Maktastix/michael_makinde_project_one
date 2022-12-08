@@ -308,12 +308,21 @@ h3 {
   margin-bottom: 60px;
 }
 
+.home_header {
+  background-image: url(../assets/home-1.jpeg);
+  background-size: cover;
+}
+
 .blog_header {
+  background-image: url(../assets/blog-1.jpeg);
+  background-size: contain;
+}
+
+.home_header,
+.blog_header {
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  background-image: url(../assets/blog-1.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .nav_bar {

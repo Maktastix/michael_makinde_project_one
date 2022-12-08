@@ -1,11 +1,20 @@
 @use 'variables' as *;
 
+.home_header {
+    background-image: url(#{$asset_path}/home-1.jpeg);
+    background-size: cover;
+}
+
+.blog_header {
+    background-image: url(#{$asset_path}/blog-1.jpeg);
+    background-size: contain;  
+}
+
+.home_header,
 .blog_header{
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    background-image: url(#{$asset_path}/blog-1.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .nav_bar {
