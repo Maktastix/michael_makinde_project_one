@@ -38,6 +38,13 @@
         background: none;
         border: none;
         border-bottom: 1px solid rgb(162, 167, 173);
+        transition: 0.5s ease-in-out;
+
+        &:hover,
+        &:focus{
+            background-color: $black;
+            color: $white_two;
+        }
     }
 
     .message{
