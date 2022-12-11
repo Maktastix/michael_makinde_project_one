@@ -313,6 +313,19 @@ h3 {
   margin-bottom: 60px;
 }
 
+.blog_icons a {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.blog_icons a:hover, .blog_icons a:focus {
+  opacity: 0.6;
+}
+
+.hamburger_menu a:hover,
+.hamburger_menu a:focus {
+  text-decoration: line-through;
+}
+
 .home_header {
   background-image: url(../assets/home-1.jpeg);
   background-size: cover;
@@ -425,6 +438,20 @@ h3 {
 }
 .contact_header h2 span:last-child {
   display: block;
+}
+
+.search_icon,
+.bag_icon,
+#menu_one {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.search_icon:hover, .search_icon:focus,
+.bag_icon:hover,
+.bag_icon:focus,
+#menu_one:hover,
+#menu_one:focus {
+  color: #C3DAB7;
 }
 
 .branding {
@@ -996,6 +1023,10 @@ footer .wrapper .footer_middle ul {
 footer .wrapper .footer_middle ul li {
   padding-bottom: 10px;
 }
+footer .wrapper .footer_middle li a:hover,
+footer .wrapper .footer_middle li a:focus {
+  text-decoration: line-through;
+}
 footer .wrapper .footer_right {
   text-align: end;
 }
@@ -1178,6 +1209,16 @@ footer .wrapper .footer_right h4 {
     text-decoration: underline;
     padding-bottom: 5px;
   }
+  .contact_header {
+    height: 150px;
+  }
+  .contact_header h2 {
+    padding-top: 80px;
+    line-height: 55px;
+  }
+  .contact_header h2 span:first-child {
+    padding-top: 20px;
+  }
   .phone_call {
     height: 500px;
   }
@@ -1328,10 +1369,10 @@ footer .wrapper .footer_right h4 {
   .blog_header {
     height: 400px;
     background-size: contain;
-    background-position: center 120px;
+    background-position: center 130px;
   }
   .blog {
-    padding-top: 40px;
+    padding-top: 0;
   }
   .blog .blog_title h2 {
     font-size: 45px;
@@ -1406,6 +1447,14 @@ footer .wrapper .footer_right h4 {
   .submit_comment .form .form_comment {
     width: 90%;
     margin: 0 auto;
+  }
+  .contact_header {
+    height: 100px;
+    background-size: contain 100px;
+    background-position: 30%;
+  }
+  .contact_header h2 {
+    padding-top: 100px;
   }
   .contact_details {
     padding: 150px 0 80px 0;

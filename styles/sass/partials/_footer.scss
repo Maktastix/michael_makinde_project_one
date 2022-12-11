@@ -47,6 +47,11 @@ footer{
                     padding-bottom: 10px;
                 }
             }
+
+            li a:hover,
+            li a:focus{
+                text-decoration: line-through;
+            }
         }
 
         .footer_right{

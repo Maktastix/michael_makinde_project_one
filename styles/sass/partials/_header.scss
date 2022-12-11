@@ -123,3 +123,14 @@
         }
     }
 }
+
+.search_icon,
+.bag_icon,
+#menu_one{
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:focus{
+        color: $light_sage;
+    }
+}

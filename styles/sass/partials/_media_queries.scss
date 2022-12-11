@@ -165,6 +165,19 @@
 
     // Contact Page CSS
 
+    .contact_header{
+        height: 150px;
+
+        h2{
+            padding-top: 80px;
+            line-height: 55px;
+
+            span:first-child{
+                padding-top: 20px;
+            }
+        }
+    }
+
     .phone_call{
         height: 500px;
 
@@ -373,11 +386,11 @@
     .blog_header{
         height: 400px;
         background-size: contain;
-        background-position: center 120px;
+        background-position: center 130px;
     }
 
     .blog{
-        padding-top: 40px;
+        padding-top: 0;
 
         .blog_title h2{
             font-size: 45px;
@@ -456,6 +469,16 @@
     }
 
     // Contact Page CSS
+
+    .contact_header{
+        height: 100px;
+        background-size: contain 100px;
+        background-position: 30%;
+
+        h2{
+            padding-top: 100px;
+        }
+    }
 
     .contact_details{
         padding: 150px 0 80px 0;

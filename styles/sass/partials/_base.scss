@@ -16,3 +16,17 @@ h3 {
     border-bottom: solid 1px rgb(162, 167, 173);
     margin-bottom: 60px;
 }
+
+.blog_icons a{
+    transition: 0.3s ease-in-out;
+    
+    &:hover,
+    &:focus {
+        opacity: 0.6;
+    }
+}
+
+.hamburger_menu a:hover,
+.hamburger_menu a:focus{
+    text-decoration: line-through;
+}
