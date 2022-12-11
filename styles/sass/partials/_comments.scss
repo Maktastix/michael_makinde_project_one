@@ -1,3 +1,5 @@
+// Comments Section CSS Partial
+
 @use 'variables' as *;
 
 
@@ -18,7 +20,7 @@
             background-color: rgb(240, 241, 241);
             clip-path: polygon(100% 0, 100% 100%, 4% 100%, 4% 27%, 2% 21%, 4% 15%, 4% 0);
             margin-bottom: 30px;
-            padding-bottom: 20px;
+            padding: 20px 0;
 
             p{
                 margin-left: 70px;

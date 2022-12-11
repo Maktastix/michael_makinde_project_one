@@ -1,3 +1,5 @@
+// Home Page (index) Sections CSS Partial
+
 @use 'variables' as *;
 
 .branding{
@@ -90,14 +92,15 @@
     width: 100%;
     background-image: url(#{$asset_path}/home-4.jpeg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: right;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 100px;
 
     .icons{
-        width: 47%;
+        width: 55%;
         margin-right: 3%;
         display: flex;
         flex-wrap: wrap;

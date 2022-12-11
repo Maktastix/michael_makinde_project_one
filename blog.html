@@ -18,7 +18,7 @@
 		<nav class="nav_bar">
 			<div class="wrapper">
 				<div class="nav_left">
-					<a href="#">home</a>
+					<a href="./index.html">home</a>
 					<a href="./blog.html">blog</a>
 					<a href="#">portfolio</a>
 				</div>
@@ -38,6 +38,30 @@
 							</div>
 						</i>
 					</button>
+				</div>
+				
+				<div class="hamburger_menu">
+					<button aria-label="search icon" class="search_icon">
+						<i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+					</button>
+					<button aria-label="shopping bag icon" class="bag_icon">
+						<i aria-hidden="true" class="fa-solid fa-bag-shopping">
+							<div>
+								<p class="bag_number">0</p>
+							</div>
+						</i>
+					</button>
+					<label for="menu">
+						<i aria-label="open/close menu icon" class="fa-sharp fa-solid fa-bars" id="menu_one"></i>
+					</label>
+					<input type="checkbox" id="menu">
+					<ul>
+						<li><a href="./index.html">home</a></li>
+						<li><a href="./blog.html">blog</a></li>
+						<li><a href="#">portfolio</a></li>
+						<li><a href="#">shop</a></li>
+						<li><a href="./contact.html">contact</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
@@ -155,7 +179,7 @@
 				</form>
 				<form class="form_comment" action="/submit-message">
 					<label for="comment"></label>
-					<textarea id="comment" name="comment" cols="40" rows="8" placeholder="Here goes your comment..." required></textarea>
+					<textarea id="comment" name="comment" required cols="40" rows="8" placeholder="Here goes your comment..."></textarea>
 				</form>
 				<button type="submit" form="form_1" value="submit">submit comment</button>
 			</div>

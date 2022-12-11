@@ -1,0 +1,538 @@
+// Media Queries Partial
+
+@use 'variables' as *;
+
+// Media Query for Smaller Desktops, Larger Laptops
+
+@media (max-width: 1300px){
+    
+    .wrapper{
+        width: 90%;
+    }
+
+    .home_header,
+    .blog_header{
+        height: 600px;
+    }
+
+    .ipad{
+        height: 800px;
+
+        .icons{
+            width: 70%;
+        }
+    }
+
+    .icon_gallery .text_container{
+        padding-right: 30px;
+    }
+
+    .line div:first-child,
+    .line div:last-child{
+        height: 70vh;
+    }
+
+}
+
+// Media Query for Tablets, Smaller Laptops
+
+@media (max-width: 940px){
+    
+    // Hamburger Menu CSS
+
+    .nav_bar .wrapper{
+
+        .nav_left,
+        .nav_right{
+            display: none;
+        }
+
+        .hamburger_menu{
+            display: flex;
+
+            button {
+                background: none;
+                border: none;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                padding-right: 20px;
+            
+                i {
+                    font-size: 20px;
+                }
+            }
+            
+            .bag_icon i {
+                position: relative;
+            
+                div {
+                    position: absolute;
+                    background-color: $light_sage;
+                    height: 15px;
+                    width: 15px;
+                    top: 12px;
+                    right: -8px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+            
+                    p {
+                        font-size: 10px;
+                        align-self: center;
+                    }
+                }
+            }
+
+            input[type="checkbox"] {
+                opacity: 0;
+                position: absolute;
+            }
+
+            label #menu_one{
+                font-size: 37px;
+            }
+            
+            ul{
+                list-style: none;
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: $white_two;
+                top: 100px;
+                left: -100%;
+                text-align: center;
+                transition: 0.5s;
+                z-index: 20;
+
+                li{
+                    display: block;
+                    margin: 40px 0;
+                    line-height: 30px;
+                }
+            }
+
+            #menu:checked ~ ul{
+                left: 0;
+            }
+        }
+    }
+
+    // Home Page (index) CSS
+
+    .ipad{
+        background-position: 90%;
+
+        .icons{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .icon_gallery{
+
+        margin: 15px 0;
+    }
+
+    // Footer CSS
+
+    footer .wrapper{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .footer_left,
+        .footer_right{
+            text-align: center;
+        }
+
+        .footer_left,
+        .footer_middle,
+        .footer_right{
+            margin: 30px 0;
+
+            input[type=email] {
+                width: 85%;
+                padding-left: 20px;
+            }
+
+            h4{
+                text-decoration: underline;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    // Contact Page CSS
+
+    .phone_call{
+        height: 500px;
+
+        img{
+            height: 500px;
+        }
+    }
+
+    .contact_details{
+        
+        .info{
+            margin: 0 auto;
+            text-align: center;
+            width: 80%;
+        }
+
+        .contact_divs .phone,
+        .contact_divs .address,
+        .contact_divs .email{
+            text-align: center;
+        }
+
+        .contact_divs .address{
+            padding: 0 50px;
+        }
+    }
+
+    // Blog Page CSS
+
+    .blog .blog_writer{ 
+    
+        .writer_container{
+            width: 30%;
+
+            .blog_info{
+                margin-left: 20px;
+            }
+        }
+
+        .info_container{
+            width: 65%;
+        }
+    }
+}
+
+// Media Query for Larger Phones, Smaller Tablets
+
+@media (max-width: 768px){
+
+    .wrapper{
+        width: 95%;
+    }
+
+    // Home Page (index) CSS
+
+    .branding{
+
+        .img_container{
+
+            img:first-child{
+                width: 400px;
+            } 
+
+            .circular_img{
+                bottom: 300px;
+                left: -70px;
+
+                img{
+                    width: 200px;
+                }
+            }
+        }
+
+        .text_container{
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 60px;
+
+            .text{
+                width: 50%;
+                padding: 30px 0;
+            }
+        }
+    }
+
+    .scroll .blog_container{
+        padding: 0 40px;
+    }
+
+    .ipad{
+        background-position: 85%;
+    
+        .icons{
+            justify-content: center;
+
+            .icon_gallery{
+                width: 80%;
+
+                .text_container{
+                    padding: 0;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .team{ 
+        h4{
+            padding-bottom: 60px;
+        }
+        
+        .gallery{
+            justify-content: center;
+
+            .text_container{
+                width: calc(100% - 20px);
+                height: 200px;
+            }
+
+            .img_container,
+            .h_container{
+                width: 50%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .line div:first-child,
+    .line div:last-child{
+        height: 60vh;
+    }
+
+    .line div:first-child{
+        padding: 0 3%;
+    }
+
+    // Contact Page CSS
+
+    .contact_details .contact_divs .address{
+        padding: 0 30px;
+    }
+}
+
+// Media Query for Phones
+
+@media (max-width: 480px){
+
+    .wrapper{
+        width: 97%;
+    }
+
+    // Home Page (index) CSS
+
+    .branding .img_container{
+
+        img:first-child{
+            width: 300px;
+            padding-top: 140px;
+        } 
+
+        .circular_img{
+            bottom: 370px;
+            left: -55px;
+
+            img{
+                width: 150px;
+            }
+        }
+    }
+    
+    .branding .text_container .text{
+        width: 70%;
+    }
+
+    .scroll .blog_container{
+        padding: 0 10px;
+
+        img{
+            width: 70%;
+        }
+    }
+    
+    .ipad{
+        height: 950px;
+
+        .icons .icon_gallery{
+            width: 100%;
+        }
+    }
+
+    .line{
+        flex-direction: column;
+
+        div:first-child,
+        div:last-child{
+            width: 100%;
+            height: 50vh;
+        }
+    }
+
+    // Blog Page CSS
+
+    .blog_header{
+        height: 400px;
+        background-size: contain;
+        background-position: center 120px;
+    }
+
+    .blog{
+        padding-top: 40px;
+
+        .blog_title h2{
+            font-size: 45px;
+            line-height: 50px;
+        }
+
+        .blog_writer{
+            flex-direction: column;
+
+            .writer_container,
+            .info_container{
+                width: 100%;
+            }
+
+            .writer_container{
+                width: 100%;
+                justify-content: space-between;
+
+                div{
+                    width: 50%;
+                }
+            }
+
+            .info_container{
+                width: 100%;
+                flex-wrap: wrap;
+
+                .blog_info{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .related_posts{
+        margin-bottom: 40px;
+
+        .gallery_container{
+            flex-direction: column;
+            align-items: center;
+
+            div{
+                width: 80%;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .comments .comment_Jenifer,
+    .comments .comment_Daniel{
+        img{
+            width: 50px;
+        }
+
+        .comment_container p{
+            margin: 0 40px;   
+        }
+    }
+
+    .submit_comment .form{
+        text-align: center;
+
+        .form_name{
+            flex-direction: column;
+            align-items: center;
+
+            div{
+                width: 90%;
+            }
+        }
+
+        .form_comment{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    // Contact Page CSS
+
+    .contact_details{
+        padding: 150px 0 80px 0;
+
+        .contact_divs{
+            flex-direction: column;
+            margin: 0 auto;
+            width: 70%;
+
+            .address{
+                margin: 20px 0;
+                border: none;
+                padding: 40px 0;
+                border-top: 1px solid rgb(162, 167, 173);
+                border-bottom: 1px solid rgb(162, 167, 173);
+            }
+        }
+    }
+
+    .phone_call{
+        height: 300px;
+
+        img{
+            height: 300px;
+        }
+    }
+}
+
+// Media Query for Small Phones
+
+@media (max-width: 340px){
+    
+    // Home Page (Index) CSS
+
+    .home_header{
+        height: 400px;
+    }
+
+    .branding .img_container{
+        padding-bottom: 20px;
+
+        img:first-child{
+            width: 230px;
+            padding-top: 120px;
+        } 
+
+        .circular_img{
+            bottom: 300px;
+            left: -45px;
+
+            img{
+                width: 110px;
+            }
+        }
+    }
+
+    .ipad{
+        height: 1100px;
+
+        .icons{
+            width: 95%;
+
+            .icon_gallery .text_container{
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .team .gallery .text_container{
+        height: 250px;
+    }
+
+    // Blog Page CSS
+
+    .blog_header{
+        height: 330px;
+        background-position: center 120px;
+        background-size: 130%;
+    }
+}
