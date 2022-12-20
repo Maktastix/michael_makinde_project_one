@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+.team .img_container {
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        transform: scale(0.95);
+    }
+}
+
+.modal_popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 241, 241, 0.7);
+    align-items: center;
+    transition: 0.3s ease-in-out;
+
+    .team_member {
+        background-color: $white;
+        border: 1px solid $black;
+        height: 30vh;
+        width: 500px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+        h4 {
+            font-weight: $font_weight_regular;
+            text-align: center;
+
+            span {
+                display: block;
+                font-weight: $font_weight_bold;
+            }
+        }
+
+        div {
+            width: 50%;
+            height: 100%;
+            margin-right: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        i {
+            font-size: 30px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: 0.2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: $light_sage;
+            }
+        }
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+        display: none;
+    }
+}

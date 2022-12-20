@@ -1517,3 +1517,82 @@ footer .wrapper .footer_right h4 {
     background-size: 130%;
   }
 }
+.team .img_container {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.team .img_container:hover, .team .img_container:focus {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.modal_popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(240, 241, 241, 0.7);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.modal_popup .team_member {
+  background-color: #FFFFFF;
+  border: 1px solid #333333;
+  height: 30vh;
+  width: 500px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+.modal_popup .team_member h4 {
+  font-weight: 400;
+  text-align: center;
+}
+.modal_popup .team_member h4 span {
+  display: block;
+  font-weight: 700;
+}
+.modal_popup .team_member div {
+  width: 50%;
+  height: 100%;
+  margin-right: 20px;
+}
+.modal_popup .team_member div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal_popup .team_member i {
+  font-size: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.modal_popup .team_member i:hover, .modal_popup .team_member i:focus {
+  color: #C3DAB7;
+}
+.modal_popup .one,
+.modal_popup .two,
+.modal_popup .three,
+.modal_popup .four,
+.modal_popup .five {
+  display: none;
+}
